@@ -1,7 +1,9 @@
 import './App.css'
-import './components/header.css'
-import { Header } from './components/header';
-import { Container } from './components/container';
+import "./components/Header/header.css"
+import { Header } from './components/Header/header';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemCount from './components/ItemCount/ItemCount';
+
 
 
 function App() {
@@ -11,7 +13,10 @@ function App() {
   return (
 <div>
   <Header />
-  <Container welcomeMessage="¡Bienvenido a nuestra tienda!"/>
+  <main className="main-content">
+  <ItemListContainer greeting={"Bienvenidos"}/>
+  <ItemCount initial = {1} stock =  {10} onAdd = {(quantity) => console.log("Cantidad agregada",quantity)}/>
+  </main>
 </div>
 
   )

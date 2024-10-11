@@ -1,22 +1,24 @@
 header {
-    display: flex; /* Flexbox para alinear los elementos en una fila */
-    justify-content: space-between; /* Espacio entre los elementos */
-    align-items: center; /* Alinear los elementos verticalmente al centro */
-    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; /* Altura del header */
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 101;
-    background-color: rgba(3, 3, 3, 0.877);
-    padding: 0 20px; /* Añadir espacio a los lados */
+    left: 0;
+    z-index: 100; /* Asegúrate que sea mayor que los demás elementos */
+    background-color: #8977ff;
+    ; /* Fondo oscuro semi-transparente */
+    color: white;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Añadir una pequeña sombra */
 }
 
 .logo {
     display: flex;
     align-items: center; /* Alinear la imagen verticalmente */
 }
-
-  /* Asegurarte de que no haya espacio entre la imagen y el h1 */
 .logo img {
     margin-left: 10px;
     max-height: 60px; /* Ajusta este valor según necesites */
@@ -24,40 +26,33 @@ header {
     transform: rotate(90deg); /* Rotar la imagen 90 grados */
     transform-origin: center; /* Mantener el centro como origen de rotación */
 }
-
 header h1 {
     font-size: 22px;
     color: white;
     margin: 0; /* Asegurarse de que el h1 no tenga márgenes */
     padding-left: 0; /* Sin padding a la izquierda */
 }
-
   /* Ajustar el espacio entre el h1 y el logo */
 .header-content {
     display: flex; /* Usar un contenedor flex para el logo y el h1 */
     align-items: center; /* Alinear verticalmente el logo y el h1 */
 }
 
-ul {
+nav {
     color: white;
     list-style-type: none; /* Eliminar los puntos de la lista */
     padding: 20px; /* Cambiar padding a 0 */
     margin: 0;
+    margin-right: 20px;
     display: flex; /* Flexbox para alinear los <li> en una fila */
+
 }
 
-
-nav ul li {
-    font-size: 12px;
-    margin-right: 20px; /* Añadir espacio entre los elementos */
-    cursor: pointer; /* Cambiar el cursor al pasar sobre el elemento */
-    transition: text-decoration 0.3s; /* Transición suave para el subrayado */
-}
-
-nav ul li:hover {
-    text-decoration: underline; /* Subrayar al pasar el mouse */
-}
-
-nav{
+nav li {
     margin-right: 10px;
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el elemento */
+    transition: text-decoration 0.3s; 
+}
+nav li:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
 }

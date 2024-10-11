@@ -1,4 +1,4 @@
-import { Navbar } from "./navBar"
+import { Navbar } from "../navBar"
 
 
 export const Header = () => {
