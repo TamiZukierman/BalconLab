@@ -2,7 +2,7 @@ import './App.css'
 import "./components/Header/header.css"
 import { Header } from './components/Header/header';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import ItemCount from './components/ItemCount/ItemCount';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer.';
 
 
 
@@ -14,8 +14,9 @@ function App() {
 <div>
   <Header />
   <main className="main-content">
-  <ItemListContainer greeting={"Bienvenidos"}/>
-  <ItemCount initial = {1} stock =  {10} onAdd = {(quantity) => console.log("Cantidad agregada",quantity)}/>
+  <ItemListContainer greeting={"Bienvenidos!"}/>
+  <ItemDetailContainer />
+  
   </main>
 </div>
 
