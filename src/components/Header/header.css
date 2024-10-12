@@ -48,11 +48,12 @@ nav {
 
 }
 
-nav li {
+.li {
     margin-right: 10px;
+    text-decoration: none;
     cursor: pointer; /* Cambiar el cursor al pasar sobre el elemento */
     transition: text-decoration 0.3s; 
 }
-nav li:hover {
-    text-decoration: underline; /* Subrayar al pasar el mouse */
+.li:hover {
+    color:rgb(255, 222, 239);; /* Subrayar al pasar el mouse */
 }
