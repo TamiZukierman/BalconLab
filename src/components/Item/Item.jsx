@@ -5,7 +5,6 @@ const Item =({id, name, img, price, stock, description}) =>{
     return (
         <article className="CardItem"> 
             <h4>{name}</h4>
-            <p>{description}</p>
             <picture>
                 <img src={img} alt= {name} className="ItemImg"/>
             </picture>
@@ -14,7 +13,7 @@ const Item =({id, name, img, price, stock, description}) =>{
                 <p className="Info">Stock disponible: {stock}</p>
             </section>
             <footer className="ItemFooter">
-                <Link className="Option" to = {"/item/${id}"}>Ver detalle</Link>
+            <Link className="Option" to = {`/item/${id}`}>Ver detalle</Link>
             </footer>
         </article>
     )

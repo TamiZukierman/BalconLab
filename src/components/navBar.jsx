@@ -9,7 +9,7 @@ export const Navbar = () =>{
             <Link className="li" to="/">inicio</Link>
             <div className="Categories">
             <NavLink to={"/category/rollitos"} className="li">rollitos</NavLink>
-            <NavLink to = {"/category/camaras"}className="li">camaras</NavLink>
+            <NavLink to = {"/category/camaras"}className="li">cámaras</NavLink>
             </div>
             <CartWidget />
         

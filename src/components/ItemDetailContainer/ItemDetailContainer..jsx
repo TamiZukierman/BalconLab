@@ -10,6 +10,7 @@ const ItemDetailContainer = () => {
     const {itemId} = useParams()
 
     useEffect (() => {
+        
         getProductById(itemId) //aca harcodie el id 1 
             .then(response => {
                 setproduct(response)
