@@ -10,7 +10,7 @@ const Item =({id, name, img, price, stock, description}) =>{
             </picture>
             <section>
                 <p className="Precio">Precio: ${price}</p>
-                <p className="Info">Stock disponible: {stock}</p>
+                
             </section>
             <footer className="ItemFooter">
             <Link className="Option" to = {`/item/${id}`}>Ver detalle</Link>
