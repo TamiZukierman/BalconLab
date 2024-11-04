@@ -10,7 +10,7 @@ import { db } from "../../config/firebase"
 const ItemDetailContainer = () => {
     const [product, setproduct] = useState(null)
 
-    const {itemId} = useParams()
+    const itemId = useParams().itemId
 
     useEffect (() => {
         

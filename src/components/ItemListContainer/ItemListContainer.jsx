@@ -4,15 +4,15 @@ import ItemList from "../ItemList/ItemList";
 import "./ItemListContainer.css"
 import { useParams } from "react-router-dom";
 
-import { collection, getDocs, query } from 'firebase/firestore';
+import { collection, getDocs, query, where} from 'firebase/firestore';
 import { db } from '../../config/firebase';
-import { where } from "firebase/firestore/lite";
+
 
 const ItemListContainer = ({ greeting }) => {
 //estado que se encargue de almacenar los productos
     const [products, setProducts] = useState([])
 
-    const {categoryId} = useParams();
+    const categoryId = useParams().categoryId;
     
 
     //para obtener los productos llamamos la funcion getProducts
