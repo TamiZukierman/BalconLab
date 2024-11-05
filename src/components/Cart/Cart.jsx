@@ -15,7 +15,7 @@ const Cart = () => {
         <div>
         {totalQuantity === 0 ? (
             <div>
-                <h1>No hay items en el carrito</h1>
+                <h3>Tu carrito está vacío :(</h3>
                 <Link to='/' className='Button'>Productos</Link>
             </div>
         ) : (
@@ -25,7 +25,7 @@ const Cart = () => {
                 ))}
                 <h3>Total: ${total}</h3>
                 <button onClick={clearCart} className='Button'>Limpiar carrito</button>
-                <Link to='checkout' className='checkout'>Checkout</Link>
+                <Link to='/checkout' className='checkout'>Finalizar compra</Link>
             </div>
         )}
     </div>

@@ -1,0 +1,72 @@
+/* Estilos generales para el contenedor del formulario */
+.checkout-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-top: 50px;
+  }
+  
+  /* Título del formulario */
+  .checkout-container h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos para los inputs */
+  .checkout-container input[type="text"],
+  .checkout-container input[type="email"],
+  .checkout-container input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+    }
+
+    .checkout-container input:focus {
+    border-color: #6c5ce7;
+    outline: none;
+    }
+
+  /* Estilos para el botón de enviar */
+    .checkout-container button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #6c5ce7;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+
+    .checkout-container button[type="submit"]:hover {
+    background-color: #4834d4;
+    }
+
+    .confirmation-message {
+    margin-top: 20px; /* Espacio superior */
+    padding: 15px; /* Espacio interno */
+    color: #f0506e;  /* Color de texto verde oscuro */
+    text-align: center; /* Centra el texto */
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente */
+}
+
+.order-id {
+  font-weight: bold; /* Estilo de negrita */
+  color: #000000;/* Cambia este color según tu preferencia (ejemplo: azul) */
+}

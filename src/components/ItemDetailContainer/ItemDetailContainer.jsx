@@ -1,4 +1,5 @@
 import "./ItemDetailContainer.css"
+import Spinner from "../Spinner/Spinner"; 
 import { useEffect, useState } from "react"
 //import { getProductById } from "../../asyncMock"
 import ItemDetail from "../ItemDetail/ItemDetail"
@@ -8,7 +9,8 @@ import {doc, getDoc} from 'firebase/firestore'
 import { db } from "../../config/firebase"
 
 const ItemDetailContainer = () => {
-    const [product, setproduct] = useState(null)
+    const [product, setproduct] = useState(null);
+    const [loading, setLoading] = useState(true);
 
     const itemId = useParams().itemId
 
@@ -21,15 +23,23 @@ const ItemDetailContainer = () => {
                     {...resp.data(), id: resp.id}
                 );
             })
+            .finally(() => {
+                setLoading(false); 
+            });
+
 
     }, [itemId])
 
     return (
         <div className="ItemDetailContainer">
-            {product && product.id ? (
-                <ItemDetail {...product} />
+            {loading ? ( // Muestra el spinner si está cargando
+                <Spinner /> // Usa el spinner aquí
             ) : (
-                <p>Cargando producto...</p> // Mensaje mientras se carga
+                product && product.id ? (
+                    <ItemDetail {...product} />
+                ) : (
+                    <p>No se encontró el producto.</p>
+                )
             )}
         </div>
     );
