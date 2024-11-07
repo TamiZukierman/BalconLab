@@ -1,9 +1,5 @@
 import "./item.css"
 import { Link } from "react-router-dom"
-//import BBDD from "../../config/firebase";
-//import {doc, getDoc} from "firebase/firestore"
-
-//metodos: doc y getDoc me va a devolver el snapshot de un solo documento
 
 
 

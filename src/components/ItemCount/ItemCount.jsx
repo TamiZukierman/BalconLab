@@ -21,7 +21,7 @@ const ItemCount = ({stock, initial, onAdd, item}) => {
     const handleAddToCart = () => {
         addItem(item, quantity); 
         onAdd(quantity); 
-        console.log("Producto agregado:", item); // Para verificar que se está llamando
+        console.log("Producto agregado:", item); 
     };
 
     return (

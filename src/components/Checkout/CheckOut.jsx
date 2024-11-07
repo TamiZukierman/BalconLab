@@ -34,7 +34,7 @@ export const CheckOut = () => {
                 clearCart()
             })
             .finally(() => {
-                setLoading(false); // Finalizar el loading después de completar la compra
+                setLoading(false); 
             });
     }
 
